@@ -1,0 +1,19 @@
++ = add 
+- = sub
+* - multiplication
+/ - division
+% - modulus
+
+== - > Equal to 
+!= -> Not Equal to 
+>= ->  a= 10 
+<= less than or equal to 
+>  -> greater than 
+< - less than 
+
+a > = 10  -> True False 
+
+if( a == b):
+    print ("login Successfull")
+else : 
+    print("")
