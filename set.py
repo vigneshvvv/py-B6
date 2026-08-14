@@ -1,35 +1,47 @@
-sample = {1,2,2,4,3,3}
-print(sample)
+numbers = {10,10,20,30,30,40}
+print(numbers)
 
-n = set()
+# to create new empty set 
+s = set()
 
-sample.add(5)
-print(sample)
+# insert number on set
+s.add(100)
+print(s)
 
-sample.update([6,8])
-print(sample)
+# to add multiple numbers
+numbers.update([50,60,70])
+print(numbers)
 
-sample.remove(8)
-print(sample)
+# gives error if number exist
+# numbers.remove(80)
+# print(numbers)
 
-sample.discard(10)
+# safest way to remove elements without throwing error
+numbers.discard(80)
+print(numbers)
 
-removed = sample.pop()
-print("Removed number is: ", removed)
-print(sample)
+# to remove the first element 
+removed = numbers.pop()
+print(removed)
+print(numbers)
 
-# sample.clear()
+# numbers.clear()
+# print(numbers)
 
-# sample = list(sample)
-# sample = set(sample)
+# to chec whether number exist 
+print(30 in numbers)
 
-A= {1,2,3,4}
-B= {3,4,5,6}
+a = {1, 2, 3}
+b = {3,4,5}
 
-print(A | B)
+# to find non repeating elements 
+print(a | b)
 
-print(A & B)
+# to find the repeating element alone 
+print(a & b)
 
-print(A - B)
+# unique elements on side of a
+print(a - b)
 
-print(A ^ B)
+# gives only unique elements between a and b
+print(a ^ b)
